@@ -1,0 +1,12 @@
+# Cloudflare Wrangler cache (contains your account ID — keep private)
+.wrangler/
+
+# Build/deploy output (generated copy of index.html + avatar.jpg)
+dist/
+
+# Editor / tooling
+.qodo/
+.vscode/
+
+# macOS
+.DS_Store
