@@ -4,6 +4,79 @@ A single-file "link in bio" page (like Linktree) that lists all your apps and so
 
 🔗 **Live demo:** https://bio.360link.app
 
+> 👋 **Came from the video? Start here →** [🚀 Build it with an AI agent (the 5-minute version)](#-build-it-with-an-ai-agent-the-5-minute-version)
+
+---
+
+## 🚀 Build it with an AI agent (the 5-minute version)
+
+This is the path from the video. You don't touch the code yourself — a coding agent downloads this site, interviews you to fill it in, and deploys it. You just answer questions and click **Deploy**.
+
+### Step 1 — Make a free Cloudflare account
+
+This is where your site will live (free hosting, free SSL). Sign up here: **[dash.cloudflare.com/sign-up](https://dash.cloudflare.com/sign-up)**. That's the only account you *have* to create.
+
+### Step 2 — Install a coding agent (CLI)
+
+A "coding agent CLI" is an AI you talk to in your terminal that can read files, edit them, and run commands for you. **Any of these work** — pick one. We use **Claude Code** in the video.
+
+| Agent | Install | Cost | Link |
+|---|---|---|---|
+| **Claude Code** *(used in the video)* | `npm install -g @anthropic-ai/claude-code` | Free tier available; more with a Claude Pro/Max plan | [claude.com/claude-code](https://claude.com/claude-code) |
+| **Gemini CLI** | `npm install -g @google/gemini-cli` | **Free** with a Google account (generous limits) | [github.com/google-gemini/gemini-cli](https://github.com/google-gemini/gemini-cli) |
+| **OpenAI Codex CLI** | `npm install -g @openai/codex` | Included with ChatGPT plans / API | [github.com/openai/codex](https://github.com/openai/codex) |
+| **Aider** *(open source)* | `pip install aider-install && aider-install` | Free tool; you bring your own API key | [aider.chat](https://aider.chat) |
+
+> **Need Node.js first?** Most of these need it. Install once from **[nodejs.org](https://nodejs.org)** (pick the "LTS" button), then run the install command above.
+
+### Step 3 — Sign in to the agent
+
+Open your terminal and run the agent (e.g. type `claude`, or `gemini`). The first time, it walks you through a quick sign-in/sign-up in your browser. Do that once and you're in.
+
+### Step 4 — Hand it this repo
+
+Copy this link:
+
+```
+https://github.com/chris-jk/MioBio
+```
+
+Then paste this to your agent (swap in the link):
+
+> **"Download this repo to my Desktop and open the folder so we can work on it: https://github.com/chris-jk/MioBio"**
+
+It'll clone the project onto your Desktop and open it up.
+
+### Step 5 — Let it interview you
+
+Now tell the agent:
+
+> **"This is a link-in-bio site. Ask me questions one at a time to fill it out for me — my name, tagline, my social links, and each of my apps with their App Store and Google Play links — then update the CONFIG block in index.html."**
+
+Answer as it asks. It fills in the `CONFIG` block for you, no code knowledge needed. Ask it to **preview the page** when you're done so you can eyeball it.
+
+### Step 6 — Deploy it (the agent does the work, you do the login)
+
+Tell the agent:
+
+> **"Deploy this to Cloudflare Pages."**
+
+It'll install Wrangler (Cloudflare's deploy tool) if needed and then hit the login step. **It can't log in *as* you** — so it'll either run `wrangler login` and pop open your browser to authorize, or it'll ask you to open a terminal and run:
+
+```bash
+wrangler login
+```
+
+Click **Allow** in the browser that opens. Back in the terminal, the agent finishes the deploy and hands you your live URL — something like `https://yourname.pages.dev`. 🎉
+
+> Want a custom domain like `bio.yourname.com`? Just add: *"and set up my custom domain bio.yourname.com"* — see [Part 7](#7-use-your-own-domain-optional) for the one prerequisite.
+
+### That's it 🙌
+
+You shipped a real website. **If this worked for you, drop a "hell yeah" in the comments** — and ⭐ the repo so others can find it.
+
+> Prefer to do it by hand (no AI)? The full manual guide is right below 👇
+
 ---
 
 ## Features
