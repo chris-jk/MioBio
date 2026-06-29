@@ -326,6 +326,11 @@
   .store-label { white-space: nowrap; }
   @media (max-width: 400px) { .store-label { display: none; } }
 
+  /* ---------- Buy Me a Coffee ---------- */
+  .coffee { margin-top: 34px; text-align: center; }
+  .coffee img { height: 48px; width: auto; border-radius: 12px; transition: transform .15s ease, box-shadow .15s ease; }
+  .coffee a:hover img { transform: translateY(-2px); box-shadow: 0 8px 22px rgba(0,0,0,.35); }
+
   /* ---------- Footer ---------- */
   footer {
     margin-top: 40px;
@@ -353,6 +358,7 @@
     <section class="links" id="updates" aria-label="What's new"></section>
     <section class="newsletter" id="newsletter"></section>
     <div class="links" id="links"></div>
+    <div class="coffee" id="coffee"></div>
     <footer id="footer"></footer>
   </main>
 
@@ -465,6 +471,12 @@ const CONFIG = {
       ],
     },
   ],
+
+  // --- "Buy me a coffee" button (appears above the footer). Set enabled: false to hide. ---
+  coffee: {
+    enabled: true,
+    url: "https://buymeacoffee.com/amgmproy",
+  },
 
   footerText: '© 2026 Chris James · Cannappy LLC',
 };
@@ -610,6 +622,16 @@ $("links").innerHTML = CONFIG.sections.map(sec => {
   const label = sec.label ? `<div class="section-label">${esc(sec.label)}</div>` : "";
   return label + cards;
 }).join("");
+
+// Buy me a coffee
+const cf = CONFIG.coffee;
+if (cf && cf.enabled && cf.url) {
+  $("coffee").innerHTML =
+    `<a href="${esc(cf.url)}" target="_blank" rel="noopener" aria-label="Buy me a coffee">` +
+    `<img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy me a coffee" loading="lazy"></a>`;
+} else {
+  $("coffee").remove();
+}
 
 // Footer
 $("footer").innerHTML = CONFIG.footerText;

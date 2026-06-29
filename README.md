@@ -113,7 +113,7 @@ Download this repo (green **Code** button → **Download ZIP**, or `git clone`).
 
 ```
 index.html   ← the website
-avatar.jpg   ← your profile photo (swap in your own)
+profile.jpg   ← your profile photo (swap in your own)
 ```
 
 Open `index.html` in your editor and scroll to the bottom. Find the block that starts with `const CONFIG = {`. **That object is your entire website.** It has four parts: your profile, your socials, your apps, and the footer.
@@ -127,7 +127,7 @@ const CONFIG = {
   name: "Chris James",
   tagline: "Indie app developer · Apps by Cannappy LLC",
   verified: true,                 // little check mark next to your name
-  avatarImage: "avatar.jpg",      // your photo, OR "" to show your initials instead
+  avatarImage: "profile.jpg",      // your photo, OR "" to show your initials instead
   avatarInitials: "CJ",
 
   // On a desktop computer, which store should app buttons open? "ios" or "android"
@@ -135,7 +135,7 @@ const CONFIG = {
   ...
 ```
 
-To use your own photo: drop a square image named `avatar.jpg` in the same folder as `index.html` (or point `avatarImage` at any image URL).
+To use your own photo: drop a square image named `profile.jpg` in the same folder as `index.html` (or point `avatarImage` at any image URL).
 
 ---
 
@@ -193,7 +193,7 @@ In the JSON that appears, find your app and copy the `artworkUrl512` value into 
 
 ## 5. Preview it on your computer
 
-Double-click `index.html` — it opens in your browser. (If you set a photo, keep `avatar.jpg` in the same folder.) To see the phone layout: right-click → **Inspect** → click the phone/tablet icon.
+Double-click `index.html` — it opens in your browser. (If you set a photo, keep `profile.jpg` in the same folder.) To see the phone layout: right-click → **Inspect** → click the phone/tablet icon.
 
 ---
 
@@ -274,7 +274,7 @@ Your live site updates in seconds.
 ```
 .
 ├── index.html     ← the entire website (edit the CONFIG block at the bottom)
-├── avatar.jpg     ← your profile photo (swap in your own)
+├── profile.jpg     ← your profile photo (swap in your own)
 └── README.md      ← this guide
 ```
 
