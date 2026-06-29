@@ -75,7 +75,9 @@ Click **Allow** in the browser that opens. Back in the terminal, the agent finis
 
 You shipped a real website. **If this worked for you, drop a "hell yeah" in the comments** — and ⭐ the repo so others can find it.
 
-> ☕ **Saved you some time?** [Buy me a coffee](https://buymeacoffee.com/amgmproy) — totally optional, much appreciated.
+**☕ Saved you some time?** Totally optional, much appreciated:
+
+<a href="https://buymeacoffee.com/amgmproy" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" height="50" width="210"></a>
 
 > Prefer to do it by hand (no AI)? The full manual guide is right below 👇
 
@@ -278,4 +280,6 @@ Your live site updates in seconds.
 
 ---
 
-Free to use and adapt for your own bio page. ⭐ the repo if it helped — and if it saved you some time, you can [☕ buy me a coffee](https://buymeacoffee.com/amgmproy).
+Free to use and adapt for your own bio page. ⭐ the repo if it helped!
+
+<a href="https://buymeacoffee.com/amgmproy" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" height="50" width="210"></a>
